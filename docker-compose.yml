@@ -1,8 +1,8 @@
 version: '3.9'
 services:
   palworld-dedicated-server:
-    container_name: palworld-dedicated-server
-    image: jammsen/palworld-dedicated-server:latest
+    container_name: wateround-server-dedicated-server
+    image: need03/wateround-server-dedicated-server:latest
     restart: unless-stopped
     ports:
       - target: 8211 # Gamerserver port inside of the container

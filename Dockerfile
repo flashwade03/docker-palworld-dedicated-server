@@ -37,9 +37,9 @@ RUN curl -fsSLO "$SUPERCRONIC_URL" \
 
 FROM --platform=linux/amd64 cm2network/steamcmd:root
 
-LABEL maintainer="Sebastian Schmidt - https://github.com/jammsen/docker-palworld-dedicated-server"
-LABEL org.opencontainers.image.authors="Sebastian Schmidt"
-LABEL org.opencontainers.image.source="https://github.com/jammsen/docker-palworld-dedicated-server"
+LABEL maintainer="Need03 - https://github.com/flashwade03/docker-palworld-dedicated-server"
+LABEL org.opencontainers.image.authors="Need03"
+LABEL org.opencontainers.image.source="https://github.com/flashwade03/docker-palworld-dedicated-server"
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
@@ -58,7 +58,7 @@ ENV DEBIAN_FRONTEND=noninteractive \
     # Container-setttings
     PUID=1000 \
     PGID=1000 \
-    TZ="Europe/Berlin" \
+    TZ="Asia/Tokyo" \
     # SteamCMD-settings
     ALWAYS_UPDATE_ON_START=true \
     STEAMCMD_VALIDATE_FILES=true \
